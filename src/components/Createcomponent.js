@@ -3,7 +3,7 @@ import { useMoralis, useMoralisFile,useNewMoralisObject} from 'react-moralis';
 import '../Create.css';
 import {tokenContractAbi} from '../abi.js';
 
-const TOKEN_CONTRACT_ADDRESS="0xB2d6e1A60e3aADC3204388C794c626c1617846cA";
+const TOKEN_CONTRACT_ADDRESS="0x32d335625C0DCE376FE68Ca4B7075c9C1d279211";
 
 function Createcomponent() {
     const{Moralis,enableWeb3, isWeb3Enabled, web3,isAuthenticated,user}=useMoralis();
@@ -26,7 +26,7 @@ function Createcomponent() {
         }
       }, [isAuthenticated]);
 
-      const myWalletAddress = user.get('ethAddress');
+      
     
     const onFileChange = (event) => {
         if (event.target.files && event.target.files[0]) {
@@ -68,6 +68,7 @@ function Createcomponent() {
      const nftFileMetaDataHash = metadataFileIpfs._hash;
      //console.log(nftFileMetaDataHash,nftFileMetaDataPath);
      const mintNft = async (metadataUrl) => {
+      const myWalletAddress = user.get('ethAddress');
         const receipt = await tokenContract.methods.createItem(metadataUrl).send({from: myWalletAddress });
         // const receipt = await tokenContract.methods.createItem(metadataUrl).send({from: myWalletAddress });
 

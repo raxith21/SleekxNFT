@@ -18,8 +18,9 @@ const onImageChange = (event) => {
 }
 
 const loggingout = () =>{
-    <Redirect to="/" exact/>
+    
     logout();
+    return (<Redirect to="/" exact/>);
     
 }
 const onSave = ()=>{

@@ -30,6 +30,9 @@ module.exports = {
         '220':'220px',
         '350':'350px',
         '34':'115px',
+        '500':'570px',
+        '685':'690px',
+        '130':'130px'
       },
       gradientColorStops: theme => ({
         'primary': '#ff0d0d',

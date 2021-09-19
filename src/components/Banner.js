@@ -14,7 +14,6 @@ function Banner() {
             <div className="hidden xl:inline-flex xl:ml-72 " >
             <img 
             src="/ethbanner3.svg"
-            objectFit="contain"
             className="object-contain h-400 w-300"
             alt="banner"
             />

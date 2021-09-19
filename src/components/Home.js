@@ -1,15 +1,14 @@
 
-import Header from './Header' 
+// import Header from './Header' 
 import Banner from './Banner' 
 import CollectionCard from './CollectionCard' 
-import Footer from './Footer' 
+// import Footer from './Footer' 
 import React from 'react';
 
 
 function Home() {
     return (
         <div className="">
-      <Header />
       <Banner/>
       <hr className="text-my-black-color" />
       <section className="bg-gradient-to-r from-primary to-secondary">
@@ -23,7 +22,7 @@ function Home() {
         </div>
       </section>
 
-      <Footer/>
+
       
     </div>
     )
